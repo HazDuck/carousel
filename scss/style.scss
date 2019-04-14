@@ -1,7 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
 $color1: blue;
 
-body {
-  p {
-    color: $color1
-  }
+div {
 }
+
+.bigPic{
+    .col-12 {
+        position: relative;
+          .arrow {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+          }
+          .left {
+            margin-left: 10px;
+            background-image: url("https://image.flaticon.com/icons/svg/142/142065.svg");
+            background-position: center;
+          }
+          .right {
+            left: 100%;
+            margin-left: -80px;
+            background-image: url("https://image.flaticon.com/icons/svg/142/142066.svg");
+            background-position: center;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .col-3 {
+        margin-top: 10px;
+        float: left;
+        img {
+          width: 100%;
+          height: auto;
+          opacity: 0.5;
+        }
+      }
+}
+
+
